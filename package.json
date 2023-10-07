@@ -1,0 +1,15 @@
+{
+  "name": "bun-docker",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "docker-run": "docker run -d --rm --name bun-docker -p 3000:3000 bun-docker",
+    "docker-stop": "docker stop bun-docker"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
