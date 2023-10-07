@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "docker-build": "docker build -t bun-docker .",
     "docker-run": "docker run -d --rm --name bun-docker -p 3000:3000 bun-docker",
     "docker-stop": "docker stop bun-docker"
   },
